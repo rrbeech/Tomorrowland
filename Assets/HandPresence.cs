@@ -21,15 +21,15 @@ public class HandPresence : MonoBehaviour
         TryInitilaize();  // Initialize controllers
     }
 
-    void TryInitilaize()  //Initialize controllers
+    void TryInitilaize()  //Initialize to controllers
     {
-        List<InputDevice> devices = new List<InputDevice>(); //divices is list of all connected devices
+        List<InputDevice> devices = new List<InputDevice>(); //devices is list of all connected devices
 
         //controllerCharacteristics = InputDeviceCharacteristics.Controller; //characteristics are set in UNITY.
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices); //pare down list to include ONLY controllers
 
 
-        foreach (var item in devices) //controllers only
+        foreach (var item in devices) //for each controller...
         {
             Debug.Log(item.characteristics);
         }
@@ -40,7 +40,7 @@ public class HandPresence : MonoBehaviour
             Debug.Log("targetDevice is " + targetDevice.characteristics);
             GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
 
-            Debug.Log("prefab is " + prefab.name);
+            Debug.Log("prefab is " + prefab.name);//there should be a prefab (controller or hand model)
 
             if (prefab)
             {
@@ -63,7 +63,7 @@ public class HandPresence : MonoBehaviour
     {   //get trigger input
         if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
-            handAnimator.SetFloat("Trigger", triggerValue);
+            handAnimator.SetFloat("Trigger", triggerValue); //animate the hand based on trigger value
         }
         else
             handAnimator.SetFloat("Trigger", 0);
@@ -71,7 +71,7 @@ public class HandPresence : MonoBehaviour
         //get grip button value
         if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
         {
-            handAnimator.SetFloat("Grip", gripValue);
+            handAnimator.SetFloat("Grip", gripValue); //animate the hand based on grip value
         }
         else
             handAnimator.SetFloat("Grip", 0);

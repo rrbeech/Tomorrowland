@@ -318,6 +318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 109434732395451517}
   - component: {fileID: 109434732388006827}
+  - component: {fileID: 1639182535051835031}
+  - component: {fileID: 2658530943078281385}
   m_Layer: 0
   m_Name: Left Hand Model
   m_TagString: Untagged
@@ -360,6 +362,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1639182535051835031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109434732395284509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024799699, y: 0.027254222, z: 0.04756552}
+  m_Center: {x: -0.011032268, y: 0.021555783, z: 0.08246389}
+--- !u!65 &2658530943078281385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109434732395284509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029724412, y: 0.025339058, z: 0.042739242}
+  m_Center: {x: 0.010156186, y: -0.013060754, z: 0.02582224}
 --- !u!1 &109434732395284511
 GameObject:
   m_ObjectHideFlags: 0
