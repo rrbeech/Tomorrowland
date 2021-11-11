@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: ff1573eac65580449bb2ce31e17ed8c8
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheat_Leaves_1_LOD0
+    second: {fileID: 2100000, guid: 7f90aef455d9bd844a351dd75e8b6c7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheat_Mobile_Mature_LOD0
+    second: {fileID: 2100000, guid: 0b3368a3be31ea543bbe7693a32fbc26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheat_Stem_LOD0
+    second: {fileID: 2100000, guid: bda27fae19597cb48835ab88536dca33, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
